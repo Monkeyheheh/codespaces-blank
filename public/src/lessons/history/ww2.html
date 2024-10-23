@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World War II: A Cosmic Journey Through History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a2a;
+            color: #e0e0ff;
+            line-height: 1.6;
+            padding: 20px;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+                radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+            background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+            background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(20, 20, 50, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 255, 0.3);
+        }
+        h1, h2 {
+            color: #00ffff;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #00ffff;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+        .event {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .event::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #00ffff;
+            border: 4px solid #0a0a2a;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid #00ffff;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #00ffff;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #00ffff;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #00ffff transparent transparent;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: rgba(0, 255, 255, 0.1);
+            position: relative;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>World War II: A Cosmic Journey Through History</h1>
+        <p>World War II was a global conflict that lasted from 1939 to 1945. It involved most of the world's nations and was the deadliest and most destructive war in history, reshaping the global political landscape and leading to significant technological advancements.</p>
+        
+        <div class="timeline">
+            <div class="event left">
+                <div class="content">
+                    <h2>1939: The Beginning</h2>
+                    <p>September 1: Germany invades Poland<br>
+                    September 3: Britain and France declare war on Germany<br>
+                    September 17: Soviet Union invades Poland</p>
+                </div>
+            </div>
+            <div class="event right">
+                <div class="content">
+                    <h2>1940: Axis Advances</h2>
+                    <p>April-June: Germany invades Denmark, Norway, Belgium, the Netherlands, and France<br>
+                    July-October: Battle of Britain<br>
+                    September 27: Tripartite Pact signed (Germany, Italy, Japan)</p>
+                </div>
+            </div>
+            <div class="event left">
+                <div class="content">
+                    <h2>1941: Global Expansion</h2>
+                    <p>June 22: Germany invades the Soviet Union<br>
+                    December 7: Japan attacks Pearl Harbor<br>
+                    December 8-11: US enters the war</p>
+                </div>
+            </div>
+            <div class="event right">
+                <div class="content">
+                    <h2>1942-1943: Turning Points</h2>
+                    <p>June 4-7, 1942: Battle of Midway<br>
+                    August 1942-February 1943: Battle of Stalingrad<br>
+                    November 1942: Operation Torch (North Africa)</p>
+                </div>
+            </div>
+            <div class="event left">
+                <div class="content">
+                    <h2>1944-1945: Allied Victory</h2>
+                    <p>June 6, 1944: D-Day (Normandy Invasion)<br>
+                    August 25, 1944: Liberation of Paris<br>
+                    May 7, 1945: Germany surrenders<br>
+                    August 6 & 9, 1945: Atomic bombings of Hiroshima and Nagasaki<br>
+                    September 2, 1945: Japan surrenders, war ends</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Key Facts and Figures</h2>
+        <ul>
+            <li>Total military deaths: ~24 million</li>
+            <li>Total civilian deaths: ~45 million</li>
+            <li>Countries involved: Over 30</li>
+            <li>Cost: Estimated $1 trillion (in 1945 dollars)</li>
+        </ul>
+
+        <h2>Major Consequences</h2>
+        <ul>
+            <li>Formation of the United Nations</li>
+            <li>Beginning of the Cold War</li>
+            <li>Decolonization and independence movements</li>
+            <li>Nuremberg Trials and Tokyo Trials</li>
+            <li>Technological advancements (radar, jet engines, nuclear technology)</li>
+            <li>Economic and social changes, including women's increased participation in the workforce</li>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const events = document.querySelectorAll('.event');
+            events.forEach((event, index) => {
+                setTimeout(() => {
+                    event.style.opacity = '0';
+                    event.style.transform = 'translateY(20px)';
+                    event.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+                    setTimeout(() => {
+                        event.style.opacity = '1';
+                        event.style.transform = 'translateY(0)';
+                    }, 50);
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
