@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmic History Navigator</title>
+    <title>Cosmic Notes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,30 +39,36 @@
             margin-bottom: 30px;
         }
 
-        button {
-            background-color: #00ffff;
-            color: #0a0a2a;
-            border: none;
-            padding: 15px 30px;
+        textarea {
+            width: 80%;
+            height: 300px;
+            padding: 15px;
+            font-size: 1em;
             border-radius: 6px;
-            font-size: 1.2em;
-            cursor: pointer;
-            margin-bottom: 15px;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #00ccff;
+            background-color: #1a1a3a; 
+            color: #e0e0ff;
+            border: 1px solid #00ffff;
+            resize: vertical; 
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Math Lessons</h1>
-        <button onclick="window.location.href=''"></button>
-        <button onclick="window.location.href=''"></button>
-        <button onClick="window.location.href=''"></button>
+        <h1>Cosmic Notes</h1>
+        <textarea id="note-area" placeholder="Start taking notes..."></textarea>
     </div>
+    <script>
+        const noteArea = document.getElementById('note-area');
+
+        // Load saved note from localStorage
+        if (localStorage.getItem('savedNote')) {
+            noteArea.value = localStorage.getItem('savedNote');
+        }
+
+        // Autosave every 1 second
+        setInterval(() => {
+            localStorage.setItem('savedNote', noteArea.value);
+        }, 1000); 
+    </script>
 </body>
 </html>
